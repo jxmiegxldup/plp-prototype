@@ -1,13 +1,17 @@
 id,title,price,wasPrice,image,rating,reviewCount,isPreOrder,hasMultipleColors,isGoingFast,soldCount,brand,color,sizes,material
-1,"Blue Apron Smock Dress With Pockets",38,50,"https://placehold.co/178x223",4,999,true,true,true,999,"Elegance","Blue","XS,S,M,L,XL","Cotton"
-2,"Floral Summer Dress",45,,"https://placehold.co/178x223",5,1200,false,true,false,0,"SummerBreeze","Pink","S,M,L","Polyester"
-3,"Classic Black Blazer",89,120,"https://placehold.co/178x223",4,567,false,false,true,250,"Professional","Black","M,L,XL,XXL","Wool"
-4,"Striped Cotton T-Shirt",25,35,"https://placehold.co/178x223",3,234,false,true,false,0,"CasualWear","Navy","XS,S,M,L,XL,XXL","Cotton"
-5,"Denim High-Waist Jeans",65,,"https://placehold.co/178x223",4,789,false,true,true,450,"DenimCo","Blue","24,26,28,30,32,34","Denim"
-6,"Silk Evening Gown",120,,"https://placehold.co/178x223",5,156,true,false,false,0,"Luxury","Red","XS,S,M","Silk"
-7,"Casual Hoodie",35,45,"https://placehold.co/178x223",4,432,false,true,false,0,"ComfortZone","Gray","S,M,L,XL,XXL","Fleece"
-8,"Formal White Shirt",55,,"https://placehold.co/178x223",4,678,false,false,true,300,"Professional","White","S,M,L,XL","Cotton"
-9,"Pleated Midi Skirt",42,60,"https://placehold.co/178x223",3,345,false,true,false,0,"Elegance","Beige","XS,S,M,L","Polyester"
-10,"Leather Crossbody Bag",75,,"https://placehold.co/178x223",5,890,false,false,true,600,"Luxury","Brown","One Size","Leather"
-11,"Knit Sweater",48,65,"https://placehold.co/178x223",4,567,false,true,false,0,"ComfortZone","Green","S,M,L,XL","Wool"
-12,"A-Line Wedding Dress",280,350,"https://placehold.co/178x223",5,234,true,false,false,0,"Luxury","White","2,4,6,8,10,12,14","Silk" 
+1,Simply Be Zebra Print Georgette Frill Skater Dress,39,50,https://placehold.co/178x223,4,14,FALSE,TRUE,TRUE,32,Simply Be,White,"14,16,18,20,22,24,26,28,30,32",Polyester
+2,Grey Pocket Detail Parachute Parka,56,,https://placehold.co/178x223,,,FALSE,FALSE,FALSE,0,Simply Be,Grey,"10,12,14,22,24,26,28,30,32",Polyamide
+3,Black Off The Shoulder Mesh Top,25,78,https://placehold.co/178x223,,,FALSE,FALSE,TRUE,12,Simply Be,Black,"10,12,14,22,24,26,28,30,32",Polyester
+4,Black Ditsy Floral Print Supersoft Midi Dress,32,35,https://placehold.co/178x223,,,FALSE,FALSE,FALSE,0,Simply Be,Black,"10,12,14,16,18,20,22,24,26,28,30,32",Polyester
+5,Simply Be Pink Zebra Print Wrap Front Tiered Midi Dress,46,,https://placehold.co/178x223,4,28,FALSE,TRUE,TRUE,42,Simply Be,Pink,"10,12,14,16,18,20,22,24,26,28,30,32",Polyester
+6,Black Side Stripe Wide Leg Trousers,35,,https://placehold.co/178x223,,,FALSE,FALSE,FALSE,0,Simply Be,Black,"10,12,14,16,24,26,28,30,32",Polyester
+7,Khaki Leopard Print Utility Shacket,40,45,https://placehold.co/178x223,4,2,FALSE,FALSE,FALSE,0,Simply Be,Green,"10,12,14,16,18,20,22,24,26,28,30,32",Cotton
+8,Leopard Print Knitted T-Shirt,32,,https://placehold.co/178x223,,,FALSE,FALSE,TRUE,19,Simply Be,Beige,"10,12,14,16,18,20,22,24,26,28,30,32",Cotton
+9,Printed Oversized Shirt,32,40,https://placehold.co/178x223,3,1,FALSE,FALSE,FALSE,0,Simply Be,Brown,"10,12,16,18,20,22,24,26,28,30,32",Polyester
+10,Mid Wash Floral Embroidered Shirt with Lyocell,40,,https://placehold.co/178x223,5,60,FALSE,FALSE,TRUE,23,Simply Be,Blue,"10,12,14,16,18,20,22,24,26,28,30,32",Polyester
+11,Herringbone Drawstring Wide Leg Trousers,32,42,https://placehold.co/178x223,4,2,FALSE,FALSE,FALSE,0,Simply Be,Brown,"10,12,14,20,22,24,26,28,30,32",Denim
+12,Simply Be Leopard Print Georgette Maxi Dress,42,55.5,https://placehold.co/178x223,5,3,FALSE,FALSE,FALSE,0,Simply Be,Beige,"10,12,14,16,18,26,28,30,32",Polyester
+13,Nobody's Child Lucy Dress,120,,https://placehold.co/178x223,,,FALSE,FALSE,TRUE,85,Nobody's Child,Orange,"10,12,14,16,18,20,22,24,26,28,30,32",Linen
+14,Blue Stripe Waffle Waist Detail Skater Dress,28.3,34,https://placehold.co/178x223,3,14,FALSE,FALSE,FALSE,0,Simply Be,Blue,"16,18,20,22,24,26,28,30,32",Polyester
+15,Mid Wash Floral Embroidered Barrel Leg Jeans,44,,https://placehold.co/178x223,4,2,FALSE,TRUE,FALSE,0,Simply Be,Blue,"10,12,14,16,18,20,22,24,26,28",Denim
+16,Spun Viscose Side Split Midi Skirt,28,,https://placehold.co/178x223,5,1,FALSE,FALSE,FALSE,0,Simply Be,Pink,"10,12,14,16,18,20,22,24,26",Viscose

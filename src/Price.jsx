@@ -1,10 +1,16 @@
 import React from 'react';
 import './Price.css';
 
+// Helper function to format price with 2 decimal places if needed
+function formatPrice(price) {
+  if (price === null || price === undefined) return '';
+  return Number.isInteger(price) ? `£${price}` : `£${price.toFixed(2)}`;
+}
+
 function CurrentPrice({ price }) {
   return (
     <div className="price__current">
-      <div className="price__value">£{price}</div>
+      <div className="price__value">{formatPrice(price)}</div>
     </div>
   );
 }
@@ -12,7 +18,7 @@ function CurrentPrice({ price }) {
 function SavePrice({ saveAmount }) {
   return (
     <div className="price__save">
-      <div className="price__save-label">Save £{saveAmount}</div>
+      <div className="price__save-label">Save {formatPrice(saveAmount)}</div>
     </div>
   );
 }
@@ -20,7 +26,7 @@ function SavePrice({ saveAmount }) {
 function WasPrice({ wasPrice }) {
   return (
     <div className="price__was">
-      Was £{wasPrice}
+      Was {formatPrice(wasPrice)}
     </div>
   );
 }

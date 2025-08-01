@@ -120,8 +120,10 @@ function ProductTile({ product, onTileClick }) {
         {/* Product Title */}
         <h3 className="product-tile__title">{product.title}</h3>
         
-        {/* Star Rating */}
-        <StarRating rating={product.rating} reviewCount={product.reviewCount} />
+        {/* Star Rating - only show if rating exists */}
+        {product.rating && (
+          <StarRating rating={product.rating} reviewCount={product.reviewCount} />
+        )}
         
         {/* Pre-order Badge */}
         {product.isPreOrder && (
