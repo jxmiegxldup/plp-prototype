@@ -1,0 +1,153 @@
+.filter-pill {
+  height: 56px;
+  min-height: 56px;
+  max-height: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: var(--Base-Colours-White, #FEFEFE);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
+  border-radius: 1000000px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.filter-pill:focus {
+  outline: none;
+}
+
+/* Hover underline effect (like buttons) */
+.filter-pill::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 0 0 1000000px 1000000px;
+  border-bottom: 2px solid transparent;
+  pointer-events: none;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition:
+    transform 150ms ease-in,
+    border-color 150ms ease-in;
+  z-index: 1;
+}
+
+.filter-pill:hover::after {
+  border-bottom-color: var(--colour-black, #131313);
+  transform: scaleX(1);
+}
+
+/* Focus visible border effect (like buttons) */
+.filter-pill::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1000000px;
+  border: 2px solid transparent;
+  pointer-events: none;
+  z-index: 2;
+  transition: border-color 150ms ease-in;
+  opacity: 0;
+}
+
+.filter-pill:focus-visible::before {
+  opacity: 1;
+  border-color: var(--colour-black, #131313);
+}
+
+/* Prevent hover underline when focus-visible */
+.filter-pill:focus-visible:hover::after {
+  transform: scaleX(0) !important;
+  border-bottom-color: transparent !important;
+}
+
+/* Active state overlay */
+.filter-pill:active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(222, 195, 179, 0.1);
+  border-radius: 1000000px;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.filter-pill:focus-visible:active::before {
+  z-index: 4;
+}
+
+.filter-pill--selected {
+  background: var(--Comms-Palette-Default-Info, #0066CC);
+  box-shadow: none;
+}
+
+.filter-pill--selected:hover::after {
+  border-bottom-color: var(--colour-white);
+}
+
+.filter-pill--selected:focus-visible::before {
+  border-color: var(--colour-white);
+}
+
+.filter-pill--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: var(--Greyscale-Grey-100, #F5F5F5);
+}
+
+.filter-pill--disabled:hover::after,
+.filter-pill--disabled:focus-visible::before,
+.filter-pill--disabled:active::before {
+  display: none;
+}
+
+.filter-pill-text {
+  text-align: center;
+  color: var(--Base-Colours-Black, #131313);
+  font-size: var(--font-size-default-300, 1rem);
+  font-weight: var(--font-weight-bold, 600);
+  line-height: var(--line-height-default-300, 1.5rem);
+  word-wrap: break-word;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.filter-pill--selected .filter-pill-text {
+  color: var(--Base-Colours-White, #FEFEFE);
+}
+
+.filter-pill--disabled .filter-pill-text {
+  color: var(--Greyscale-Grey-400, #9CA3AF);
+} 

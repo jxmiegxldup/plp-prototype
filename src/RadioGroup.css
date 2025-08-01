@@ -1,0 +1,14 @@
+/* Radio Group Styles */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.radio-group .cell {
+  border-bottom: 1px solid var(--colour-grey-100, #F8F8F8);
+}
+
+.radio-group .cell:last-child {
+  border-bottom: none;
+} 

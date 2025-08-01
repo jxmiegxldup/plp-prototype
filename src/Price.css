@@ -1,0 +1,70 @@
+/* Price Component Styles */
+.price {
+  align-self: stretch;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 0.25rem;
+}
+
+.price__current {
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 2px;
+  display: flex;
+}
+
+.price__value {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--colour-black, #131313);
+  font-size: var(--font-size-default-300, 1rem);
+  font-family: inherit;
+  font-weight: var(--font-weight-bold, 600);
+  line-height: var(--line-height-default-300, 1.5rem);
+  word-wrap: break-word;
+}
+
+.price__save {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background: var(--colour-success, #208636);
+  overflow: hidden;
+  border-radius: 4px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.price__save-label {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--colour-white, #FEFEFE);
+  font-size: var(--font-size-default-200, 0.75rem);
+  font-family: inherit;
+  font-weight: var(--font-weight-medium, 450);
+  line-height: var(--line-height-default-200, 1rem);
+  word-wrap: break-word;
+}
+
+.price__was {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--colour-grey-400, #3F4952);
+  font-size: var(--font-size-default-200, 0.75rem);
+  font-family: inherit;
+  font-weight: var(--font-weight-medium, 450);
+  line-height: var(--line-height-default-200, 1rem);
+  word-wrap: break-word;
+} 

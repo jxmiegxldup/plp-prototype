@@ -1,0 +1,13 @@
+id,title,price,wasPrice,image,rating,reviewCount,isPreOrder,hasMultipleColors,isGoingFast,soldCount,brand,color,sizes,material
+1,"Blue Apron Smock Dress With Pockets",38,50,"https://placehold.co/178x223",4,999,true,true,true,999,"Elegance","Blue","XS,S,M,L,XL","Cotton"
+2,"Floral Summer Dress",45,,"https://placehold.co/178x223",5,1200,false,true,false,0,"SummerBreeze","Pink","S,M,L","Polyester"
+3,"Classic Black Blazer",89,120,"https://placehold.co/178x223",4,567,false,false,true,250,"Professional","Black","M,L,XL,XXL","Wool"
+4,"Striped Cotton T-Shirt",25,35,"https://placehold.co/178x223",3,234,false,true,false,0,"CasualWear","Navy","XS,S,M,L,XL,XXL","Cotton"
+5,"Denim High-Waist Jeans",65,,"https://placehold.co/178x223",4,789,false,true,true,450,"DenimCo","Blue","24,26,28,30,32,34","Denim"
+6,"Silk Evening Gown",120,,"https://placehold.co/178x223",5,156,true,false,false,0,"Luxury","Red","XS,S,M","Silk"
+7,"Casual Hoodie",35,45,"https://placehold.co/178x223",4,432,false,true,false,0,"ComfortZone","Gray","S,M,L,XL,XXL","Fleece"
+8,"Formal White Shirt",55,,"https://placehold.co/178x223",4,678,false,false,true,300,"Professional","White","S,M,L,XL","Cotton"
+9,"Pleated Midi Skirt",42,60,"https://placehold.co/178x223",3,345,false,true,false,0,"Elegance","Beige","XS,S,M,L","Polyester"
+10,"Leather Crossbody Bag",75,,"https://placehold.co/178x223",5,890,false,false,true,600,"Luxury","Brown","One Size","Leather"
+11,"Knit Sweater",48,65,"https://placehold.co/178x223",4,567,false,true,false,0,"ComfortZone","Green","S,M,L,XL","Wool"
+12,"A-Line Wedding Dress",280,350,"https://placehold.co/178x223",5,234,true,false,false,0,"Luxury","White","2,4,6,8,10,12,14","Silk" 

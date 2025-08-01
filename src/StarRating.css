@@ -1,0 +1,38 @@
+/* Star Rating Component Styles */
+.star-rating {
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 1rem;
+}
+
+.star-rating__stars {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.star-rating__star {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.star-rating__review-count {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--colour-grey-400, #3F4952);
+  font-size: var(--font-size-default-200, 0.75rem);
+  font-family: inherit;
+  font-weight: var(--font-weight-medium, 450);
+  line-height: var(--line-height-default-200, 1rem);
+  word-wrap: break-word;
+} 

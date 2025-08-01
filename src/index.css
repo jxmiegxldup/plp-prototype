@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Type system variables */
+  --font-size-default-100: 0.625rem;
+  --font-size-default-200: 0.75rem;
+  --font-size-default-300: 1rem;
+  --font-size-default-400: 1.25rem;
+  --font-size-default-500: 1.625rem;
+  --font-size-default-600: 2rem;
+  --line-height-default-100: 0.875rem;
+  --line-height-default-200: 1rem;
+  --line-height-default-300: 1.5rem;
+  --line-height-default-400: 1.75rem;
+  --line-height-default-500: 2rem;
+  --line-height-default-600: 2.5rem;
+  
+  /* Color variables */
+  --colour-white: #fefefe;
+  --colour-black: #131313;
+  --colour-link-blue: #0066CC;
+  --colour-grey-100: #F8F8F8;
+  --colour-grey-400: #3F4952;
+  --colour-success: #208636;
+  --elevation-8pt: 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 8px 8px 0px rgba(0, 0, 0, 0.16);
+
+  /* Font weight variables */
+  --font-weight-regular: 400;
+  --font-weight-medium: 450;
+  --font-weight-bold: 600;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Remove display: flex and place-items: center to allow full-width flexing */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Remove global button styles to avoid interfering with custom components */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: var(--colour-white);
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: var(--colour-white);
+  }
+}

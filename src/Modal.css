@@ -1,0 +1,268 @@
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1000;
+  padding: 0;
+}
+
+.modal-container {
+  width: 100%;
+  max-width: 767px;
+  min-width: 320px;
+  height: 75vh;
+  max-height: 75vh;
+  background: transparent;
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Close Button Area */
+.modal-close-area {
+  align-self: stretch;
+  padding: 16px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: inline-flex;
+  background: transparent;
+}
+
+.modal-close-button {
+  width: 56px;
+  height: 56px;
+  max-width: 56px;
+  min-width: 56px;
+  max-height: 56px;
+  min-height: 56px;
+  background: var(--colour-white, #FEFEFE);
+  overflow: hidden;
+  border-radius: 1000000px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+/* Header */
+.modal-header {
+  align-self: stretch;
+  height: 80px;
+  padding-left: 56px;
+  padding-right: 56px;
+  position: relative;
+  background: var(--colour-grey-100, #F8F8F8);
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.modal-title {
+  flex: 1 1 0;
+  text-align: center;
+  color: var(--colour-black, #131313);
+  font-size: var(--font-size-default-400, 1.25rem);
+  font-family: inherit;
+  font-weight: var(--font-weight-bold, 600);
+  line-height: var(--line-height-default-400, 1.75rem);
+  word-wrap: break-word;
+  margin: 0;
+}
+
+.modal-header-close {
+  width: 56px;
+  height: 56px;
+  left: 0;
+  top: 12px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* External close button - hidden by default */
+.modal-external-close {
+  display: none;
+}
+
+/* Ensure external close button is hidden on mobile */
+@media (max-width: 767px) {
+  .modal-external-close,
+  .modal-external-close.ds-btn--round.ds-btn--icon {
+    display: none !important;
+  }
+}
+
+/* Content */
+.modal-content {
+  align-self: stretch;
+  flex: 1 1 0;
+  background: var(--colour-white, #FEFEFE);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  display: flex;
+}
+
+.modal-main-content {
+  align-self: stretch;
+  flex: 1 1 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 8px;
+  display: flex;
+  overflow-y: auto;
+}
+
+/* Footer */
+.modal-footer {
+  align-self: stretch;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: var(--colour-grey-100, #F8F8F8);
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.16);
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: flex;
+}
+
+.modal-footer-button {
+  flex: 1 1 0;
+  height: 56px;
+  min-width: 100px;
+  max-height: 56px;
+  min-height: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  overflow: hidden;
+  border-radius: 1000000px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .modal-overlay {
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  
+  .modal-container {
+    width: 375px;
+    max-width: 375px;
+    min-width: 375px;
+    height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+    position: relative;
+  }
+
+  /* Hide close button area above header on tablet+ */
+  .modal-close-area {
+    display: none;
+  }
+
+  /* Update header for tablet+ */
+  .modal-header {
+    height: 116px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    position: relative;
+  }
+
+  /* Update header close button for tablet+ */
+  .modal-header-close {
+    left: 0;
+    top: 30px;
+  }
+
+  /* Show external close button for tablet+ */
+  .modal-external-close {
+    display: flex !important;
+    position: fixed !important;
+    right: calc(375px + 1rem);
+    top: 2rem;
+    z-index: 1002;
+  }
+
+  /* Animation for tablet+ */
+  .modal-container {
+    animation: slideInRight 0.3s ease-out;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Animation */
+.modal-overlay {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Mobile animation only */
+@media (max-width: 767px) {
+  .modal-container {
+    animation: slideUp 0.3s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Focus management */
+.modal-container:focus {
+  outline: none;
+}
+
+/* Ensure proper stacking */
+.modal-overlay {
+  backdrop-filter: blur(2px);
+} 

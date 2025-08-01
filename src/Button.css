@@ -1,0 +1,416 @@
+.ds-btn {
+  display: inline-flex;
+  height: 56px;
+  min-width: 132px;
+  min-height: 56px;
+  max-height: 56px;
+  padding: 0px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  border-radius: var(--Border-Radius-Max, 1000000px);
+  border: none;
+  font-size: var(--font-size-default-300);
+  line-height: var(--line-height-default-300);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+
+.ds-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 0 0 var(--Border-Radius-Max, 1000000px) var(--Border-Radius-Max, 1000000px);
+  border-bottom: 2px solid transparent;
+  pointer-events: none;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition:
+    transform 150ms ease-in,
+    border-color 150ms ease-in;
+  z-index: 1;
+}
+
+.ds-btn--primary::after {
+  border-bottom-color: transparent;
+}
+.ds-btn--primary:hover::after,
+.ds-btn--primary:focus-visible::after {
+  border-bottom-color: var(--colour-white);
+  transform: scaleX(1);
+}
+
+.ds-btn--secondary::after,
+.ds-btn--tertiary::after {
+  border-bottom-color: transparent;
+}
+.ds-btn--secondary:hover::after,
+.ds-btn--secondary:focus-visible::after,
+.ds-btn--tertiary:hover::after,
+.ds-btn--tertiary:focus-visible::after {
+  border-bottom-color: var(--colour-black, #131313);
+  transform: scaleX(1);
+}
+
+.ds-btn--primary {
+  background: var(--colour-black, #131313);
+  color: var(--colour-white);
+  border: 1px solid var(--colour-black, #131313);
+}
+
+.ds-btn--primary:active {
+  /* No background change on active */
+}
+
+.ds-btn:focus {
+  outline: none;
+}
+
+.ds-btn:focus-visible {
+  outline: none;
+}
+
+.ds-btn--secondary {
+  border-radius: var(--Border-Radius-Max, 1000000px);
+  border: 1px solid var(--colour-black, #131313);
+  background: var(--colour-white);
+  color: var(--colour-black, #131313);
+}
+
+.ds-btn--secondary:active {
+  /* No background change on active */
+}
+
+.ds-btn--tertiary {
+  border-radius: var(--Border-Radius-Max, 1000000px);
+  background: none;
+  border: none;
+  color: var(--colour-black, #131313);
+}
+
+.ds-btn--tertiary:active {
+  background: #f3f3f3;
+}
+
+.ds-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--Border-Radius-Max, 1000000px);
+  border: 2px solid transparent;
+  pointer-events: none;
+  z-index: 2;
+  transition: border-color 150ms ease-in;
+  opacity: 0;
+}
+
+.ds-btn:focus-visible::before {
+  opacity: 1;
+}
+
+.ds-btn--primary:focus-visible::before {
+  border-color: var(--colour-white);
+}
+.ds-btn--secondary:focus-visible::before,
+.ds-btn--tertiary:focus-visible::before {
+  border-color: var(--colour-black, #131313);
+} 
+
+/* Prevent hover underline when focus-visible (all variants) */
+.ds-btn:focus-visible:hover::after,
+.ds-btn--primary:focus-visible:hover::after,
+.ds-btn--secondary:focus-visible:hover::after,
+.ds-btn--tertiary:focus-visible:hover::after {
+  transform: scaleX(0) !important;
+  border-bottom-color: transparent !important;
+} 
+
+.ds-btn__active-overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(222, 195, 179, 0.1);
+  border-radius: var(--Border-Radius-Max, 1000000px);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.1s;
+}
+
+.ds-btn:active::before {
+  /* Show overlay on active */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(222, 195, 179, 0.1);
+  border-radius: var(--Border-Radius-Max, 1000000px);
+  z-index: 3;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.ds-btn:focus-visible:active::before {
+  z-index: 4;
+}
+
+/* Ensure label is above overlay */
+.ds-btn > * {
+  position: relative;
+  z-index: 5;
+} 
+
+.ds-btn--icon {
+  display: inline-flex;
+  height: 3.5rem;
+  min-width: 6.25rem;
+  min-height: 3.5rem;
+  max-height: 3.5rem;
+  padding: 0rem 1.5rem;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.ds-btn__icon {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.ds-btn__icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  fill: currentColor;
+} 
+
+.ds-btn,
+.ds-btn--icon {
+  white-space: nowrap;
+  min-width: 8.25rem;
+  width: auto;
+  max-width: 100%;
+} 
+
+.sort-filter-group > .ds-btn:first-child:focus-visible::before {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.sort-filter-group > .ds-btn:last-child:focus-visible::before {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+} 
+
+.ds-btn--round {
+  display: flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  min-width: 3.5rem;
+  max-width: 3.5rem;
+  min-height: 3.5rem;
+  max-height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  border-radius: var(--Border-Radius-Max, 62500rem);
+  font-size: var(--font-size-default-400, 1.25rem);
+  font-weight: var(--font-weight-bold, 600);
+}
+
+.ds-btn--round.ds-btn--primary {
+  background: var(--colour-black, #131313);
+  color: var(--colour-white);
+  border: 1px solid var(--colour-black, #131313);
+}
+
+.ds-btn--round.ds-btn--secondary {
+  background: var(--colour-white);
+  color: var(--colour-black, #131313);
+  border: 1px solid var(--colour-black, #131313);
+}
+
+.ds-btn--round.ds-btn--tertiary {
+  background: none;
+  color: var(--colour-black, #131313);
+  border: none;
+} 
+
+.ds-btn--round.ds-btn--icon {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.25rem !important;
+  min-width: 3.5rem !important;
+  max-width: 3.5rem !important;
+  width: 3.5rem !important;
+  min-height: 3.5rem !important;
+  max-height: 3.5rem !important;
+  height: 3.5rem !important;
+  padding: 0 !important;
+}
+
+/* Small Secondary Icon Button Variant */
+.ds-btn--small {
+  display: inline-flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  min-width: 3.5rem;
+  max-width: 3.5rem;
+  min-height: 3.5rem;
+  max-height: 3.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  border-radius: var(--Border-Radius-Max, 1000000px);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+
+.ds-btn--small.ds-btn--secondary {
+  background: transparent;
+  border: none;
+  color: var(--colour-black, #131313);
+}
+
+.ds-btn--small.ds-btn--secondary > div {
+  width: 2.5rem;
+  height: 2.5rem;
+  max-width: 2.5rem;
+  min-width: 2.5rem;
+  max-height: 2.5rem;
+  min-height: 2.5rem;
+  background: var(--colour-white, #FEFEFE);
+  border-radius: var(--Border-Radius-Max, 1000000px);
+  border: 1px solid var(--colour-black, #131313);
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  display: flex;
+  transition: background 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Apply secondary button states to the visible button */
+.ds-btn--small.ds-btn--secondary:hover > div {
+  /* No background change on hover - matches secondary button behavior */
+}
+
+.ds-btn--small.ds-btn--secondary:active > div {
+  /* Use overlay on active - matches secondary button behavior */
+  position: relative;
+}
+
+.ds-btn--small.ds-btn--secondary:active > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(222, 195, 179, 0.1);
+  border-radius: var(--Border-Radius-Max, 1000000px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Apply bottom border animation to visible button (like other secondary buttons) */
+.ds-btn--small.ds-btn--secondary > div::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: var(--colour-black, #131313);
+  border-radius: 0 0 var(--Border-Radius-Max, 1000000px) var(--Border-Radius-Max, 1000000px);
+  transition: height 0.2s ease;
+  pointer-events: none;
+}
+
+.ds-btn--small.ds-btn--secondary:hover > div::after {
+  height: 0.25rem;
+}
+
+/* Focus state - border around inner div when outer button is focused */
+.ds-btn--small.ds-btn--secondary:focus-visible > div {
+  outline: none;
+  border: 3px solid var(--colour-black, #131313) !important; /* Focus ring as direct border */
+}
+
+.ds-btn--small.ds-btn--secondary:focus-visible > div::before {
+  display: none; /* Disable the ::before pseudo-element */
+}
+
+.ds-btn--small.ds-btn--secondary:focus-visible > div::after {
+  height: 0.25rem;
+}
+
+/* Remove focus states from outer button */
+.ds-btn--small:focus-visible {
+  outline: none;
+}
+
+/* Override the general focus-visible rule for small buttons */
+.ds-btn--small:focus-visible::before {
+  display: none;
+}
+
+/* Override the general active rule for small buttons */
+.ds-btn--small:active::before {
+  display: none;
+}
+
+/* Override the general ::after rule for small buttons */
+.ds-btn--small::after {
+  display: none;
+} 
+
+.ds-btn--round .plp-bottom-nav__label {
+  font-size: var(--font-size-default-200);
+  line-height: var(--line-height-default-200);
+  color: var(--colour-black, #131313);
+  font-weight: var(--font-weight-bold, 600);
+} 
+
+.ds-btn--round:not(.ds-btn--icon) {
+  font-size: var(--font-size-default-300);
+  line-height: var(--line-height-default-300);
+}
+
+.ds-btn--round.ds-btn--icon .plp-bottom-nav__label {
+  margin-top: 0;
+  padding-top: 0;
+} 
+
+.ds-btn--round.ds-btn--primary.ds-btn--icon .plp-bottom-nav__label {
+  color: var(--colour-white);
+} 
