@@ -68,7 +68,7 @@ try {
         case 'image':
           // Convert placeholder URLs to local WebP paths
           if (value.includes('placehold.co')) {
-            product[header] = `/products/Product-${product.id || 'placeholder'}.webp`;
+            product[header] = `/products/product-${product.id || 'placeholder'}.webp`;
           } else {
             product[header] = value;
           }

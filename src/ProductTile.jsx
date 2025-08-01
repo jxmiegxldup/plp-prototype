@@ -16,6 +16,15 @@ function ProductTile({ product, onTileClick }) {
     event.target.src = "https://placehold.co/178x223";
   }, []);
 
+  // Generate responsive image srcset
+  const generateSrcSet = useCallback(() => {
+    if (product.responsiveImage) {
+      return `${product.responsiveImage.standard} 1x, ${product.responsiveImage.retina} 2x, ${product.responsiveImage.ultra} 3x`;
+    }
+    // Fallback for products without responsive images
+    return product.image;
+  }, [product]);
+
   // Handle tile click
   const handleTileClick = useCallback(() => {
     if (onTileClick) {
@@ -76,6 +85,7 @@ function ProductTile({ product, onTileClick }) {
           <img 
             className="product-tile__image" 
             src={product.image} 
+            srcSet={generateSrcSet()}
             alt={product.title}
             onError={handleImageError}
             loading="lazy"
