@@ -35,7 +35,7 @@
   padding-right: 8px;
   padding-top: 2px;
   padding-bottom: 2px;
-  background: var(--colour-success, #208636);
+  background: var(--colour-alert, #d40000);
   overflow: hidden;
   border-radius: 4px;
   justify-content: flex-start;

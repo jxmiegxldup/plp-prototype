@@ -26,6 +26,7 @@
   --colour-grey-100: #F8F8F8;
   --colour-grey-400: #3F4952;
   --colour-success: #208636;
+  --colour-error: #D40000;
   --elevation-8pt: 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 8px 8px 0px rgba(0, 0, 0, 0.16);
 
   /* Font weight variables */
