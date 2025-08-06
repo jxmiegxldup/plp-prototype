@@ -25,13 +25,7 @@
       "30",
       "32"
     ],
-    "material": "Polyester",
-    "responsiveImage": {
-      "standard": "/products/product-1.webp",
-      "retina": "/products/product-1-retina.webp",
-      "ultra": "/products/product-1-ultra.webp",
-      "default": "/products/product-1.webp"
-    }
+    "material": "Polyester"
   },
   {
     "id": 2,
@@ -58,13 +52,7 @@
       "30",
       "32"
     ],
-    "material": "Polyamide",
-    "responsiveImage": {
-      "standard": "/products/product-2.webp",
-      "retina": "/products/product-2-retina.webp",
-      "ultra": "/products/product-2-ultra.webp",
-      "default": "/products/product-2.webp"
-    }
+    "material": "Polyamide"
   },
   {
     "id": 3,
@@ -91,13 +79,7 @@
       "30",
       "32"
     ],
-    "material": "Polyester",
-    "responsiveImage": {
-      "standard": "/products/product-3.webp",
-      "retina": "/products/product-3-retina.webp",
-      "ultra": "/products/product-3-ultra.webp",
-      "default": "/products/product-3.webp"
-    }
+    "material": "Polyester"
   },
   {
     "id": 4,
@@ -127,13 +109,7 @@
       "30",
       "32"
     ],
-    "material": "Polyester",
-    "responsiveImage": {
-      "standard": "/products/product-4.webp",
-      "retina": "/products/product-4-retina.webp",
-      "ultra": "/products/product-4-ultra.webp",
-      "default": "/products/product-4.webp"
-    }
+    "material": "Polyester"
   },
   {
     "id": 5,
@@ -163,13 +139,7 @@
       "30",
       "32"
     ],
-    "material": "Polyester",
-    "responsiveImage": {
-      "standard": "/products/product-5.webp",
-      "retina": "/products/product-5-retina.webp",
-      "ultra": "/products/product-5-ultra.webp",
-      "default": "/products/product-5.webp"
-    }
+    "material": "Polyester"
   },
   {
     "id": 6,
@@ -196,13 +166,7 @@
       "30",
       "32"
     ],
-    "material": "Polyester",
-    "responsiveImage": {
-      "standard": "/products/product-6.webp",
-      "retina": "/products/product-6-retina.webp",
-      "ultra": "/products/product-6-ultra.webp",
-      "default": "/products/product-6.webp"
-    }
+    "material": "Polyester"
   },
   {
     "id": 7,
@@ -232,13 +196,7 @@
       "30",
       "32"
     ],
-    "material": "Cotton",
-    "responsiveImage": {
-      "standard": "/products/product-7.webp",
-      "retina": "/products/product-7-retina.webp",
-      "ultra": "/products/product-7-ultra.webp",
-      "default": "/products/product-7.webp"
-    }
+    "material": "Cotton"
   },
   {
     "id": 8,
@@ -268,13 +226,7 @@
       "30",
       "32"
     ],
-    "material": "Cotton",
-    "responsiveImage": {
-      "standard": "/products/product-8.webp",
-      "retina": "/products/product-8-retina.webp",
-      "ultra": "/products/product-8-ultra.webp",
-      "default": "/products/product-8.webp"
-    }
+    "material": "Cotton"
   },
   {
     "id": 9,
@@ -303,13 +255,7 @@
       "30",
       "32"
     ],
-    "material": "Polyester",
-    "responsiveImage": {
-      "standard": "/products/product-9.webp",
-      "retina": "/products/product-9-retina.webp",
-      "ultra": "/products/product-9-ultra.webp",
-      "default": "/products/product-9.webp"
-    }
+    "material": "Polyester"
   },
   {
     "id": 10,
@@ -339,13 +285,7 @@
       "30",
       "32"
     ],
-    "material": "Polyester",
-    "responsiveImage": {
-      "standard": "/products/product-10.webp",
-      "retina": "/products/product-10-retina.webp",
-      "ultra": "/products/product-10-ultra.webp",
-      "default": "/products/product-10.webp"
-    }
+    "material": "Polyester"
   },
   {
     "id": 11,
@@ -373,13 +313,7 @@
       "30",
       "32"
     ],
-    "material": "Denim",
-    "responsiveImage": {
-      "standard": "/products/product-11.webp",
-      "retina": "/products/product-11-retina.webp",
-      "ultra": "/products/product-11-ultra.webp",
-      "default": "/products/product-11.webp"
-    }
+    "material": "Denim"
   },
   {
     "id": 12,
@@ -406,13 +340,7 @@
       "30",
       "32"
     ],
-    "material": "Polyester",
-    "responsiveImage": {
-      "standard": "/products/product-12.webp",
-      "retina": "/products/product-12-retina.webp",
-      "ultra": "/products/product-12-ultra.webp",
-      "default": "/products/product-12.webp"
-    }
+    "material": "Polyester"
   },
   {
     "id": 13,
@@ -442,13 +370,7 @@
       "30",
       "32"
     ],
-    "material": "Linen",
-    "responsiveImage": {
-      "standard": "/products/product-13.webp",
-      "retina": "/products/product-13-retina.webp",
-      "ultra": "/products/product-13-ultra.webp",
-      "default": "/products/product-13.webp"
-    }
+    "material": "Linen"
   },
   {
     "id": 14,
@@ -475,13 +397,7 @@
       "30",
       "32"
     ],
-    "material": "Polyester",
-    "responsiveImage": {
-      "standard": "/products/product-14.webp",
-      "retina": "/products/product-14-retina.webp",
-      "ultra": "/products/product-14-ultra.webp",
-      "default": "/products/product-14.webp"
-    }
+    "material": "Polyester"
   },
   {
     "id": 15,
@@ -509,13 +425,7 @@
       "26",
       "28"
     ],
-    "material": "Denim",
-    "responsiveImage": {
-      "standard": "/products/product-15.webp",
-      "retina": "/products/product-15-retina.webp",
-      "ultra": "/products/product-15-ultra.webp",
-      "default": "/products/product-15.webp"
-    }
+    "material": "Denim"
   },
   {
     "id": 16,
@@ -542,12 +452,25 @@
       "24",
       "26"
     ],
-    "material": "Viscose",
-    "responsiveImage": {
-      "standard": "/products/product-16.webp",
-      "retina": "/products/product-16-retina.webp",
-      "ultra": "/products/product-16-ultra.webp",
-      "default": "/products/product-16.webp"
-    }
+    "material": "Viscose"
+  },
+  {
+    "id": 17,
+    "title": "Blue Distressed Jeans",
+    "price": 16,
+    "wasPrice": 120,
+    "image": "/products/product-17.webp",
+    "rating": 4,
+    "reviewCount": 25,
+    "isPreOrder": true,
+    "hasMultipleColors": true,
+    "isGoingFast": true,
+    "soldCount": 2000,
+    "brand": "Jamie's Jeans",
+    "color": "Blue",
+    "sizes": [
+      "32"
+    ],
+    "material": "Cotton"
   }
 ]
