@@ -19,9 +19,17 @@ function ProductTile({ product, onTileClick }) {
   // Generate responsive image srcset
   const generateSrcSet = useCallback(() => {
     if (product.responsiveImage) {
-      return `${product.responsiveImage.standard} 1x, ${product.responsiveImage.retina} 2x, ${product.responsiveImage.ultra} 3x`;
+      // Create srcset string with proper formatting for Firefox
+      return `${product.responsiveImage.standard} 1x, ${product.responsiveImage.retina} 2x`;
     }
-    // Fallback for products without responsive images
+    return undefined;
+  }, [product]);
+
+  // Get the best image source for the current device
+  const getImageSrc = useCallback(() => {
+    if (product.responsiveImage) {
+      return product.responsiveImage.standard;
+    }
     return product.image;
   }, [product]);
 
@@ -84,7 +92,7 @@ function ProductTile({ product, onTileClick }) {
         <div className="product-tile__image-wrapper">
           <img 
             className="product-tile__image" 
-            src={product.image} 
+            src={getImageSrc()}
             srcSet={generateSrcSet()}
             alt={product.title}
             onError={handleImageError}
