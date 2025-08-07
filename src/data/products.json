@@ -574,5 +574,30 @@
       "ultra": "/products/product-17-ultra.webp",
       "default": "/products/product-17.webp"
     }
+  },
+  {
+    "id": 18,
+    "title": "Wow New Skirt",
+    "price": 499,
+    "wasPrice": null,
+    "image": "/products/product-18.webp",
+    "rating": 1,
+    "reviewCount": 1,
+    "isPreOrder": false,
+    "hasMultipleColors": false,
+    "isGoingFast": false,
+    "soldCount": 0,
+    "brand": "Simply Be",
+    "color": "Natural",
+    "sizes": [
+      "36"
+    ],
+    "material": "Polyester",
+    "responsiveImage": {
+      "standard": "/products/product-18.webp",
+      "retina": "/products/product-18-retina.webp",
+      "ultra": "/products/product-18-ultra.webp",
+      "default": "/products/product-18.webp"
+    }
   }
 ]
