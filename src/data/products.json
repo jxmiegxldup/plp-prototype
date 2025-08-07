@@ -549,5 +549,30 @@
       "ultra": "/products/product-16-ultra.webp",
       "default": "/products/product-16.webp"
     }
+  },
+  {
+    "id": 17,
+    "title": "Look New Jeans!",
+    "price": 4.32,
+    "wasPrice": 543,
+    "image": "/products/product-17.webp",
+    "rating": 3,
+    "reviewCount": 543,
+    "isPreOrder": true,
+    "hasMultipleColors": true,
+    "isGoingFast": true,
+    "soldCount": 2000,
+    "brand": "Jamie's Jeans",
+    "color": "Yellow",
+    "sizes": [
+      "8"
+    ],
+    "material": "Denim",
+    "responsiveImage": {
+      "standard": "/products/product-17.webp",
+      "retina": "/products/product-17-retina.webp",
+      "ultra": "/products/product-17-ultra.webp",
+      "default": "/products/product-17.webp"
+    }
   }
 ]
